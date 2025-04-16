@@ -1,6 +1,7 @@
 import "bootstrap/dist/css/bootstrap.min.css"; // Importera Bootstrap CSS
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter } from "react-router-dom";
 import HomePage from "./pages/HomePage";
 import ProductsPage from "./pages/ProductsPage";
 import ProductPage from "./pages/ProductPage";
@@ -12,7 +13,8 @@ import Footer from "./components/Footer"; // Importera Footer
 
 function App() {
   return (
-    <Router>
+    
+      <Router basename="/webshop6"> {/* Lägg till basename här */}
       <Header /> {/* Lägg till Header här */}
       <Routes>
         <Route path="/" element={<HomePage />} />
