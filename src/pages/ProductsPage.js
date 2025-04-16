@@ -16,13 +16,5 @@ const ProductsPage = () => {
     </div>
   );
 };
-
-const styles = {
-  grid: {
-    display: "flex",
-    flexWrap: "wrap",
-    gap: "2rem"
-  }
-};
-
+  
 export default ProductsPage;
