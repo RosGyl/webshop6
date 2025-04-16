@@ -11,17 +11,31 @@ const Header = () => {
     <header style={styles.header}>
       <nav className="container d-flex justify-content-between align-items-center">
         <div>
-          <Link to="/" className="btn btn-light me-2">Hem</Link>
-          <Link to="/products" className="btn btn-light me-2">Produkter</Link>
+        <Link
+  to="/"
+  className="btn btn-light me-2"
+  style={{ border: "1px solid black" }} // Lägg till en svart ram
+>
+  Hem
+</Link>
+<Link
+  to="/products"
+  className="btn btn-light me-2"
+  style={{ border: "1px solid black" }} // Lägg till en svart ram
+>
+  Produkter
+</Link>
+
+         
         </div>
         <div>
           <Link
             to="/cart"
             className="btn position-relative"
             style={{
-              backgroundColor: totalQuantity > 0 ? "yellow" : "white", // Gul om produkter finns, annars vit
-              color: totalQuantity > 0 ? "black" : "black", // Svart text i båda fallen
-              border: "1px solid black", // Lägg till en kantlinje för bättre synlighet
+              backgroundColor: totalQuantity > 0 ? "yellow" : "white",
+              color: totalQuantity > 0 ? "black" : "black",
+              border: "1px solid black",
             }}
           >
             Varukorg 🛒
@@ -37,7 +51,9 @@ const Header = () => {
 
 const styles = {
   header: {
-    backgroundColor: "#008b8b", // Teal färgkod
+    backgroundImage: `url(${process.env.PUBLIC_URL}/images/bakgrund.jpg)`, // Bakgrundsbild
+    backgroundSize: "cover", // Gör så att bilden täcker hela headern
+    backgroundPosition: "center", // Centrerar bilden
     padding: "1.5rem", // Ökad padding för större header
     marginBottom: "2rem",
     color: "white", // Vit text

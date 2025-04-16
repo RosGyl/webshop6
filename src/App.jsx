@@ -1,12 +1,10 @@
 import "bootstrap/dist/css/bootstrap.min.css"; // Importera Bootstrap CSS
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import { BrowserRouter } from "react-router-dom";
 import HomePage from "./pages/HomePage";
 import ProductsPage from "./pages/ProductsPage";
 import ProductPage from "./pages/ProductPage";
 import CartPage from "./pages/CartPage";
-
 import CheckoutPage from "./pages/CheckoutPage";//importera CheckoutPage
 import Header from "./components/Header"; // importera Header
 import Footer from "./components/Footer"; // Importera Footer
