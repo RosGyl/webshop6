@@ -1,3 +1,4 @@
+
 import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 import { CartContext } from "../context/CartContext";
@@ -10,11 +11,19 @@ const Header = () => {
     <header style={styles.header}>
       <nav className="container d-flex justify-content-between align-items-center">
         <div>
-          <Link to="/" style={styles.link}>Hem</Link>
-          <Link to="/products" style={styles.link}>Produkter</Link>
+          <Link to="/" className="btn btn-light me-2">Hem</Link>
+          <Link to="/products" className="btn btn-light me-2">Produkter</Link>
         </div>
         <div>
-          <Link to="/cart" style={styles.link}>
+          <Link
+            to="/cart"
+            className="btn position-relative"
+            style={{
+              backgroundColor: totalQuantity > 0 ? "yellow" : "white", // Gul om produkter finns, annars vit
+              color: totalQuantity > 0 ? "black" : "black", // Svart text i båda fallen
+              border: "1px solid black", // Lägg till en kantlinje för bättre synlighet
+            }}
+          >
             Varukorg 🛒
             {totalQuantity > 0 && (
               <span style={styles.badge}>{totalQuantity}</span>
@@ -28,16 +37,10 @@ const Header = () => {
 
 const styles = {
   header: {
-    backgroundColor: "#eee",
-    padding: "1rem",
-    marginBottom: "2rem"
-  },
-  link: {
-    textDecoration: "none",
-    fontWeight: "bold",
-    color: "#333",
-    marginRight: "1rem",
-    position: "relative"
+    backgroundColor: "#008b8b", // Teal färgkod
+    padding: "1.5rem", // Ökad padding för större header
+    marginBottom: "2rem",
+    color: "white", // Vit text
   },
   badge: {
     backgroundColor: "red",
@@ -47,8 +50,8 @@ const styles = {
     position: "absolute",
     top: "-10px",
     right: "-10px",
-    fontSize: "0.8rem"
-  }
+    fontSize: "0.8rem",
+  },
 };
 
 export default Header;

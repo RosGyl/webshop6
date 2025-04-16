@@ -8,14 +8,14 @@ const Footer = () => {
           {/* Info */}
           <div className="col-md-4">
             <h5>Info</h5>
-            <p>information om webshop, t.ex. öppettider eller policyer.</p>
+            <p>Öppettider dygnet runt</p>
           </div>
 
           {/* Kontakt */}
           <div className="col-md-4">
             <h5>Kontakt</h5>
-            <p>Email: support@webshop.com</p>
-            <p>Telefon: 0700019011</p>
+            <p>Email: rosita@webshop.com</p>
+            <p>Telefon: +4612345678</p>
           </div>
 
           {/* Följ oss */}

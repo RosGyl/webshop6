@@ -6,10 +6,10 @@ const HomePage = () => {
     <div className="container text-center py-5">
       <h1 className="mb-4">Välkommen till Tomat Paradiset!</h1>
       <img 
-       src={`${process.env.PUBLIC_URL}/images/tomatparadis.jpg`} // provar igen
+       src={`${process.env.PUBLIC_URL}/images/blandade5.jpg`} // provar igen
         alt="Tomatparadiset" 
         className="img-fluid mb-4" 
-        style={{ maxHeight: "400px", objectFit: "cover" }}
+        style={{ maxHeight: "800px", objectFit: "cover" }}
       />
 
       <p className="lead mb-4">
