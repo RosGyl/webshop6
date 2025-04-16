@@ -6,7 +6,7 @@ const HomePage = () => {
     <div className="container text-center py-5">
       <h1 className="mb-4">Välkommen till Tomat Paradiset!</h1>
       <img 
-        src="/images/tomatparadis.jpg" 
+         src={`${process.env.PUBLIC_URL}/images/tomatparadis.jpg`} // Korrekt användning av PUBLIC_URL
         alt="Tomatparadiset" 
         className="img-fluid mb-4" 
         style={{ maxHeight: "400px", objectFit: "cover" }}
