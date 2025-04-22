@@ -51,8 +51,8 @@ const styles = {
   image: {
     width: "100px",
     height: "100px", // Gör höjden lika stor som bredden
-    objectFit: "cover", // Bevara proportionerna och fyll utrymmet
-    borderRadius: "8px", // Valfritt: Lägg till rundade hörn för bättre design
+    objectFit: "cover", // Bevara proportionerna 
+    borderRadius: "8px", // Lägg till rundade hörn för bättre design
   },
 };
 

@@ -2,16 +2,16 @@ const products = [
   {
     id: 1,
     name: "Bifftomat",
-    description: "En stor biffig tomat med mycket smak.",
+    description: "Bifftomat Coeur De Boeuf",
     price: 100,
-    image: `${process.env.PUBLIC_URL}/images/tomatparadis.jpg`,
+    image: `${process.env.PUBLIC_URL}/images/bifftomat.jpg`,
   },
   {
     id: 2,
-    name: "Golden queen",
-    description: "Gul tomat",
+    name: "Pärontomat",
+    description: "Yellow Pearshaped, Kulturarv",
     price: 100,
-    image: `${process.env.PUBLIC_URL}/images/gul.jpg`,
+    image: `${process.env.PUBLIC_URL}/images/paron.jpg`,
   },
   {
     id: 3,
@@ -29,17 +29,50 @@ const products = [
   },
   {
     id: 3,
-    name: "Choklad cherry",
-    description: "Brun liten tomat",
+    name: "Kösbärstomat",
+    description: "F1 Supersweet 100",
     price: 100,
-    image: `${process.env.PUBLIC_URL}/images/97071_1.jpg`,
+    image: `${process.env.PUBLIC_URL}/images/kosbar.jpg`,
   },
   {
     id: 3,
-    name: "Choklad cherry",
-    description: "Brun liten tomat",
+    name: "Lucky Tiger",
+    description: "Ekologisk tomat",
     price: 100,
-    image: `${process.env.PUBLIC_URL}/images/97071_1.jpg`,
+    image: `${process.env.PUBLIC_URL}/images/tiger.jpg`,
+    
+  },
+  {
+    id: 3,
+    name: "Ekologisk Busktomat",
+    description: "Yellow Donut - Kultursort",
+    price: 100,
+    image: `${process.env.PUBLIC_URL}/images/buskgul.jpg`,
+    
+  },
+  {
+    id: 3,
+    name: "Lucky Tiger",
+    description: "Ekologisk tomat",
+    price: 100,
+    image: `${process.env.PUBLIC_URL}/images/tiger.jpg`,
+    
+  },
+  {
+    id: 3,
+    name: "Citrina",
+    description: "Citrina, Kultursort",
+    price: 100,
+    image: `${process.env.PUBLIC_URL}/images/citrina.jpg`,
+    
+  },
+  {
+    id: 3,
+    name: "Lucky Tiger",
+    description: "Ekologisk tomat",
+    price: 100,
+    image: `${process.env.PUBLIC_URL}/images/tiger.jpg`,
+    
   },
 ];
 

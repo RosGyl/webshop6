@@ -11,22 +11,27 @@ const Header = () => {
     <header style={styles.header}>
       <nav className="container d-flex justify-content-between align-items-center">
         <div>
-        <Link
-  to="/"
-  className="btn btn-light me-2"
-  style={{ border: "1px solid black" }} // Lägg till en svart ram
->
-  Hem
-</Link>
-<Link
-  to="/products"
-  className="btn btn-light me-2"
-  style={{ border: "1px solid black" }} // Lägg till en svart ram
->
-  Produkter
-</Link>
-
-         
+          <Link
+            to="/"
+            className="btn btn-light me-2"
+            style={{ border: "1px solid black" }}
+          >
+            Hem
+          </Link>
+          <Link
+            to="/products"
+            className="btn btn-light me-2"
+            style={{ border: "1px solid black" }}
+          >
+            Produkter
+          </Link>
+          <Link
+            to="/about"
+            className="btn btn-light me-2"
+            style={{ border: "1px solid black" }}
+          >
+            Om oss
+          </Link>
         </div>
         <div>
           <Link

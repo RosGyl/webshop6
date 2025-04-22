@@ -1,3 +1,35 @@
+
+html, body {
+  height: 100%; /* Gör att hela sidan tar upp 100% av höjden */
+  margin: 0; /* Ta bort standardmarginaler */
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%; /* Gör att root-elementet täcker hela höjden */
+}
+
+main {
+  flex: 1; /* Gör att huvudinnehållet tar upp all tillgänglig plats */
+}
+
+
+
+footer {
+  background-color: #213d09; /* Exempel: Mörkgrön bakgrund */
+  color: white; /* Vit text */
+  text-align: center;
+  padding: 1rem 0;
+}
+
+/* Existerande kod i App.css */
+.App {
+  text-align: center;
+}
+
+
+
 .App {
   text-align: center;
 }

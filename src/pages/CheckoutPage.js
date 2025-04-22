@@ -7,6 +7,7 @@ const CheckoutPage = () => {
     name: "",
     email: "",
     address: "",
+    city: "",
   });
 
   const handleInputChange = (e) => {
@@ -80,6 +81,18 @@ const CheckoutPage = () => {
                 name="address"
                 className="form-control"
                 value={formData.address}
+                onChange={handleInputChange}
+                required
+              />
+            </div>
+            <div className="mb-3">
+              <label htmlFor="stad" className="form-label">Pn och stad</label>
+              <input
+                type="text"
+                id="stad"
+                name="stad"
+                className="form-control"
+                value={formData.stad}
                 onChange={handleInputChange}
                 required
               />
