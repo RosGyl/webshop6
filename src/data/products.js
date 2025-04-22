@@ -21,21 +21,21 @@ const products = [
     image: `${process.env.PUBLIC_URL}/images/plommon.jpg`,
   },
   {
-    id: 3,
+    id: 4,
     name: "Körsbärstomat 'Black Cherry'",
     description: "En ovanlig sort av en vanlig grönsak.",
     price: 100,
     image: `${process.env.PUBLIC_URL}/images/97071_1.jpg`,
   },
   {
-    id: 3,
+    id: 5,
     name: "Kösbärstomat",
     description: "F1 Supersweet 100",
     price: 100,
     image: `${process.env.PUBLIC_URL}/images/kosbar.jpg`,
   },
   {
-    id: 3,
+    id: 6,
     name: "Lucky Tiger",
     description: "Ekologisk tomat",
     price: 100,
@@ -43,7 +43,7 @@ const products = [
     
   },
   {
-    id: 3,
+    id: 7,
     name: "Ekologisk Busktomat",
     description: "Yellow Donut - Kultursort",
     price: 100,
@@ -51,7 +51,7 @@ const products = [
     
   },
   {
-    id: 3,
+    id: 8,
     name: "Lucky Tiger",
     description: "Ekologisk tomat",
     price: 100,
@@ -59,7 +59,7 @@ const products = [
     
   },
   {
-    id: 3,
+    id: 9,
     name: "Citrina",
     description: "Citrina, Kultursort",
     price: 100,
@@ -67,7 +67,7 @@ const products = [
     
   },
   {
-    id: 3,
+    id: 10,
     name: "Lucky Tiger",
     description: "Ekologisk tomat",
     price: 100,
