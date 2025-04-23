@@ -29,7 +29,10 @@ Webshop6 är en React-baserad webbapplikation för en e-handelsbutik. Projektet 
    3. npm install
    4. npm start
 
-   src/
+## Projektstruktur
+
+```plaintext
+src/
 ├── components/         # Återanvändbara React-komponenter
 │   ├── Header.js       # Sidhuvud
 │   ├── Footer.js       # Sidfot
@@ -37,7 +40,7 @@ Webshop6 är en React-baserad webbapplikation för en e-handelsbutik. Projektet 
 ├── context/            # Context API för global tillståndshantering
 │   └── CartContext.js  # Hantering av varukorg
 ├── data/               # Statisk data
-│   └── [products.js]  # Lista över produkter
+│   └── products.js     # Lista över produkter
 ├── pages/              # Sidor i applikationen
 │   ├── HomePage.js     # Startsida
 │   ├── ProductsPage.js # Produktlista
