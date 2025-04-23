@@ -20,7 +20,7 @@ const ProductCard = ({ product }) => {
             width: "100%", // Anpassar bredden till kortets bredd
             height: "200px", // Sätter en fast höjd
             objectFit: "contain", // Gör att hela bilden visas utan beskärning
-            backgroundColor: "#f8f9fa" // Valfritt: Lägg till en bakgrundsfärg för tomma ytor
+            
           }}
         />
       </Link>

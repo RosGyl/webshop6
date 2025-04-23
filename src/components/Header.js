@@ -56,7 +56,7 @@ const Header = () => {
 
 const styles = {
   header: {
-    backgroundImage: `url(${process.env.PUBLIC_URL}/images/bakgrund.jpg)`, // Bakgrundsbild
+    backgroundImage: `url(${process.env.PUBLIC_URL}/images/blandade3.jpg)`, // Bakgrundsbild
     backgroundSize: "cover", // Gör så att bilden täcker hela headern
     backgroundPosition: "center", // Centrerar bilden
     padding: "1.5rem", // Ökad padding för större header
