@@ -10,13 +10,18 @@ const ProductCard = ({ product }) => {
   };
 
   return (
-    <div className="card h-100">
+    <div className="card h-100 text-center"> {/* Lägg till text-center här */}
       <Link to={`/products/${product.id}`}>
         <img 
           src={product.image} 
           alt={product.name} 
           className="card-img-top" 
-          style={{ maxHeight: "200px", objectFit: "cover" }}
+          style={{
+            width: "100%", // Anpassar bredden till kortets bredd
+            height: "200px", // Sätter en fast höjd
+            objectFit: "contain", // Gör att hela bilden visas utan beskärning
+            backgroundColor: "#f8f9fa" // Valfritt: Lägg till en bakgrundsfärg för tomma ytor
+          }}
         />
       </Link>
       <div className="card-body">

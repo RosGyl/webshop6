@@ -1,69 +1,30 @@
 
-html, body {
-  height: 100%; /* Gör att hela sidan tar upp 100% av höjden */
-  margin: 0; /* Ta bort standardmarginaler */
+.product-page {
+  padding: 2rem;
 }
 
-#root {
-  display: flex;
-  flex-direction: column;
-  min-height: 100%; /* Gör att root-elementet täcker hela höjden */
+.product-page img {
+  max-width: 400px;
+  display: block;
+  margin: 0 auto; /* Centrerar bilden */
 }
 
-main {
-  flex: 1; /* Gör att huvudinnehållet tar upp all tillgänglig plats */
+.product-page hr {
+  margin: 1.5rem 0; /* Konsistent marginal för strecket */
 }
 
-
-footer {
-  background-color: #213d09; /* Exempel: Mörkgrön bakgrund */
-  color: white; /* Vit text */
-  text-align: center;
-  padding: 1rem 0;
+.product-page p {
+  margin: 0 0 1rem; /* Konsistent marginal för text */
 }
 
-/* Existerande kod i App.css */
-.App {
-  text-align: center;
-}
-
-
-
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #213d09;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.product-page button {
+  background-color: #007bff;
   color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.product-page button:hover {
+  background-color: #0056b3;
 }
