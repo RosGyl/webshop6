@@ -1,4 +1,3 @@
-
 import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 import { CartContext } from "../context/CartContext";
@@ -13,21 +12,21 @@ const Header = () => {
         <div>
           <Link
             to="/"
-            className="btn btn-light me-2"
+            className="btn btn-light btn-sm me-2"
             style={{ border: "1px solid black" }}
           >
             Hem
           </Link>
           <Link
             to="/products"
-            className="btn btn-light me-2"
+            className="btn btn-light btn-sm me-2"
             style={{ border: "1px solid black" }}
           >
             Produkter
           </Link>
           <Link
             to="/about"
-            className="btn btn-light me-2"
+            className="btn btn-light btn-sm me-2"
             style={{ border: "1px solid black" }}
           >
             Om oss
@@ -38,12 +37,12 @@ const Header = () => {
             to="/cart"
             className="btn position-relative"
             style={{
-              backgroundColor: totalQuantity > 0 ? "yellow" : "white",
+              backgroundColor: totalQuantity > 0 ? "white" : "white",
               color: totalQuantity > 0 ? "black" : "black",
               border: "1px solid black",
             }}
           >
-            Varukorg 🛒
+            <i className="bi bi-bag"></i> {/* Bootstrap väskikon */}
             {totalQuantity > 0 && (
               <span style={styles.badge}>{totalQuantity}</span>
             )}
@@ -64,7 +63,7 @@ const styles = {
     color: "white", // Vit text
   },
   badge: {
-    backgroundColor: "red",
+    backgroundColor: "green",
     color: "white",
     padding: "5px 10px",
     borderRadius: "50%",
